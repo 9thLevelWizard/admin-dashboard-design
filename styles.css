@@ -68,7 +68,7 @@ table {
 }
 
 :root {
-	font-family: "Roboto-Regular";
+	font-family: "Roboto-Regular", "Times New Roman", Times, serif;
 }
 
 .container {
@@ -84,6 +84,11 @@ table {
 
 .small-icon {
 	width: 20px;
+	justify-self: center;
+}
+
+.small-account-avatar {
+	width: 40px;
 	justify-self: center;
 }
 
@@ -129,14 +134,41 @@ table {
 	background-color: grey;
 }
 
+.header-top,
+.header-bottom {
+	padding-left: 30px;
+}
+
 .header-top {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.search-container,
+.notifications-container {
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+}
+
+.search-container {
+	column-gap: 10px;
+}
+
+.notifications-container {
+	justify-content: center;
+    gap: 30px;
 }
 
 #search {
 	height: 20px;
 	width: 500px;
 	border-style: none;
-	border-radius: 5px;
+	border-radius: 10px;
+}
+
+.small-account-name {
+	font-size: 1rem;
+	font-family: "Roboto-Bold", "Times New Roman", Times, serif;
+	text-align: center;
 }
