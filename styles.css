@@ -84,7 +84,7 @@ table {
 	font-family: "Roboto-Bold", "Times New Roman", Times, serif;
 	background-color: royalblue;
 	color: white;
-	padding-left: 40px;
+	padding-left: 30px;
 }
 
 .dashboard img {
@@ -94,9 +94,8 @@ table {
 
 .dashboard-header {
 	display: grid;
-	grid-template-columns: 40px 1fr;
+	grid-template-columns: 1fr 5fr;
 	align-items: center;
-	gap: 20px;
 	font-size: 2rem;
 	position: relative;
 	top: 20px;
@@ -104,20 +103,22 @@ table {
 
 .dashboard-header > img {
 	width: 40px;
+	justify-self: center;
 }
 
 .dashboard-list {
 	display: grid;
-	gap: 20px;
+	row-gap: 20px;
 }
 
 .dashboard-list > li {
     display: grid;
-    grid-template-columns: 20px 1fr;
+    grid-template-columns: 1fr 5fr;
     align-items: center;
     gap: inherit;
 }
 
 .dashboard-list > li > img {
 	width: 20px;
+	justify-self: center;
 }
