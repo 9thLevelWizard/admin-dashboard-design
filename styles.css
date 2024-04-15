@@ -77,6 +77,12 @@ table {
 	height: 100vh;
 }
 
+.dashboard-header,
+.header-top {
+	position: relative;
+	top: 10px;
+}
+
 .big-icon {
 	width: 40px;
 	justify-self: center;
@@ -112,8 +118,6 @@ table {
 	grid-template-columns: 1fr 5fr;
 	align-items: center;
 	font-size: 2rem;
-	position: relative;
-	top: 20px;
 }
 
 .dashboard-list {
