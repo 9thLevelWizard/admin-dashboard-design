@@ -80,6 +80,7 @@ table {
 .dashboard {
 	display: grid;
 	grid-template-rows: 3rem 0.3fr 0.15fr;
+	grid-row: span 5;
 	gap: 50px;
 	font-family: "Roboto-Bold", "Times New Roman", Times, serif;
 	background-color: royalblue;
@@ -121,4 +122,20 @@ table {
 .dashboard-list > li > img {
 	width: 20px;
 	justify-self: center;
+}
+
+.header {
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+	background-color: grey;
+	outline-color: black;
+	outline-style: solid;
+	outline-width: 2px;
+}
+
+#search {
+	height: 20px;
+	width: 500px;
+	border-style: none;
+	border-radius: 5px;
 }
