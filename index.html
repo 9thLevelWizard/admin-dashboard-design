@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Admin Dashboard Design</title>
 </head>
+
 <body>
     <div class="container">
         <div class="dashboard">
-            <h1 class="dashboard-header"><img src="./icons/view-dashboard.svg" alt="Dashboard Icon" class="big-icon">Dashboard</h1>
+            <h1 class="dashboard-header"><img src="./icons/view-dashboard.svg" alt="Dashboard Icon"
+                    class="big-icon">Dashboard</h1>
             <ul class="dashboard-list">
                 <li><img src="./icons/home.svg" alt="Home Icon" class="small-icon">Home</li>
                 <li><img src="./icons/card-account-details.svg" alt="Profile Icon" class="small-icon">Profile</li>
@@ -32,12 +35,23 @@
                 </div>
                 <div class="notifications-container">
                     <img src="./icons/bell-ring-outline.svg" alt="Notifications Icon" class="small-icon">
-                    <img src="./icons/avatar-svgrepo-com.svg" alt="Account Avatar" class="small-account-avatar">
+                    <img src="./icons/avatar-svgrepo-com.svg" alt="Account Avatar, Small" class="small-account-avatar">
                     <p class="small-account-name">Account Name</p>
                 </div>
             </div>
             <div class="header-bottom">
-
+                <div class="account-header-container">
+                    <img src="./icons/avatar-svgrepo-com.svg" alt="Account Avatar, Big" class="big-account-avatar">
+                    <div class="account-header-greeting">
+                        <p>Hi there,</p>
+                        <p>Account Name (@JohnDoe)</p>
+                    </div>
+                </div>
+                <div class="account-buttons-container">
+                    <button type="button" class="new" id="new">New</button>
+                    <button type="button" class="upload" id="upload">Upload</button>
+                    <button type="button" class="share" id="share">Share</button>
+                </div>
             </div>
         </div>
         <div class="main-content">
@@ -45,4 +59,5 @@
         </div>
     </div>
 </body>
+
 </html>

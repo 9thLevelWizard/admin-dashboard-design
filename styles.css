@@ -68,7 +68,10 @@ table {
 }
 
 :root {
-	font-family: "Roboto-Regular", "Times New Roman", Times, serif;
+	--font-regular: "Roboto-Regular", "Times New Roman", Times, serif;
+	--font-bold: "Roboto-Bold", "Times New Roman", Times, serif;
+	--font-thin: "Roboto-Thin", "Times New Roman", Times, serif;
+	font-family: var(--font-regular);
 }
 
 .container {
@@ -98,12 +101,17 @@ table {
 	justify-self: center;
 }
 
+.big-account-avatar {
+	width: 60px;
+	justify-self: center;
+}
+
 .dashboard {
 	display: grid;
 	grid-template-rows: 3rem 0.3fr 0.15fr;
 	grid-row: span 5;
 	gap: 50px;
-	font-family: "Roboto-Bold", "Times New Roman", Times, serif;
+	font-family: var(--font-bold);
 	background-color: royalblue;
 	color: white;
 	padding-left: 30px;
@@ -135,7 +143,7 @@ table {
 .header {
 	display: grid;
 	grid-template-rows: 1fr 2fr;
-	background-color: grey;
+	font-family: var(--font-bold);
 }
 
 .header-top,
@@ -143,7 +151,8 @@ table {
 	padding-left: 30px;
 }
 
-.header-top {
+.header-top,
+.header-bottom {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
@@ -169,10 +178,50 @@ table {
 	width: 500px;
 	border-style: none;
 	border-radius: 10px;
+	background-color: rgba(128, 128, 128, 0.5);
 }
 
 .small-account-name {
 	font-size: 1rem;
-	font-family: "Roboto-Bold", "Times New Roman", Times, serif;
 	text-align: center;
+}
+
+.account-header-container {
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 20px;
+}
+
+.account-header-greeting {
+	display: grid;
+	grid-auto-flow: row;
+	gap: 10px;
+}
+
+.account-header-greeting > p:first-child {
+	font-size: 0.7rem;
+}
+
+.account-buttons-container {
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.account-buttons-container button {
+	background-color: royalblue;
+	color: white;
+	font-family: var(--font-bold);
+	border-style: none;
+	border-radius: 10px;
+	height: 30px;
+	width: 80px;
+}
+
+.main-content {
+	background-color: rgba(128, 128, 128, 0.5);
 }
