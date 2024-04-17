@@ -82,7 +82,8 @@ table {
 
 .dashboard-header,
 .header-top,
-.card-container {
+.card-container,
+.main-content-side {
 	position: relative;
 	top: 10px;
 }
@@ -222,14 +223,16 @@ table {
 .main-content {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
-	grid-auto-flow: row;
+	column-gap: 20px;
 	padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 	background-color: rgba(128, 128, 128, 0.5);
 }
 
 .section-titles {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 2fr 1fr;
 	grid-column: span 2;
 	font-family: var(--font-bold);
 	padding-top: 30px;
@@ -238,6 +241,7 @@ table {
 .card-container {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	grid-row: span 4;
 	gap: 20px;
 }
 
@@ -272,4 +276,52 @@ table {
     position: relative;
     top: 10px;
     right: 20px;
+}
+
+.main-content-side {
+	display: grid;
+    grid-auto-flow: row;
+	grid-row: span 4;
+    row-gap: 50px;
+}
+
+.announcements-container {
+	display: grid;
+	grid-auto-flow: row;
+	border-style: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    background-color: white;
+}
+
+.announcement > p:first-child {
+	font-family: var(--font-bold);
+}
+
+.announcement > p:last-child {
+	font-family: var(--font-thin);
+}
+
+.trending-container {
+	display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.trend {
+	display: grid;
+    grid-auto-flow: column;
+	column-gap: 10px;
+}
+
+.trend-text {
+	display: grid;
+	grid-auto-flow: row;
+}
+
+.trend-text > p:last-child {
+	font-family: var(--font-thin);
 }
