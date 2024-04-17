@@ -244,20 +244,32 @@ table {
 .card {
 	display: grid;
 	grid-auto-flow: row;
-	height: 150px;
+	align-content: center;
+	height: 175px;
 	width: 300px;
 	border-style: none;
 	border-radius: 5px;
 	box-shadow: 1px 4px 4px 0px #00000080;
-	padding-left: 10px;
+	padding-left: 15px;
 	border-left: 5px solid orange;
 	background-color: white;
 }
 
 .card > .card-title {
 	font-family: var(--font-bold);
+	padding-bottom: 5px;
 }
 
 .card > .card-text {
 	font-family: var(--font-thin);
+}
+
+.card-buttons-container {
+	display: grid;
+    grid-auto-flow: column;
+    column-gap: 20px;
+    justify-content: end;
+    position: relative;
+    top: 10px;
+    right: 20px;
 }
